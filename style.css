@@ -1,0 +1,278 @@
+a{
+    text-decoration: none;
+}
+.headersection{
+    background-color: rgba(0, 0, 0, 0.855);
+    margin-bottom: 0
+}
+.logo{
+
+}
+.logo img{
+    width: ;
+}
+.menu{
+
+}
+.menu ul{
+     text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a {
+    display: block;
+    font-size: 8px;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    color: white;
+    transition: .5s;
+    line-height: 33px;
+}
+.menu ul li a:hover{
+color: #855d2f;
+}
+.menu ul li:first-child a{
+    color: #855d2f;
+}
+.menu ul li ul {
+    position: absolute;
+    width: 100px;
+    top: 129%;
+    left: -24px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: scaleY(0);
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: top center;
+   
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    color: black;
+    padding: 0;
+    display: block;
+}
+.menu ul li ul li:hover a{
+    background-color: beige;
+    color: chocolate;
+}
+.menu ul li::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 63px;
+    left: 0px;
+    right: 0;
+    background-color: chocolate;
+    transition: .5s;
+    margin: 0 auto;
+}
+.menu ul li:hover::after{
+    width: 100%
+}
+.menu ul li ul li:hover::after{
+    width: 0;
+    height: 0;
+}
+
+
+/* Hero-section */
+
+.hero-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.506),rgba(0, 0, 0, 0.535)),url(./ia_200000019.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
+}
+
+.hero{
+    padding: 300px 0;
+    text-align: center;
+}
+.hero h2 {
+    color: white;
+    font-size: 69px;
+    padding: 10px 0px;
+}
+.hero h3{
+    color: white;
+    position: relative;
+    
+}
+.hero h3::before {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 17px;
+    left: 544px;
+}
+.hero h3::after {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 17px;
+    right: 548px;
+}
+.hero span a {
+    display: inline-block;
+    background-color: #c69459;
+    color: white;
+    padding: 24px 66px;
+    margin-top: 33px;
+    border-radius: 14px;
+}
+.hero span a:hover{
+    background-color: white;
+    color: #c6945e;
+    transition: .5s;
+}
+
+
+/* service-section */
+
+.service-section{
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+.single-service{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+
+}
+.single-service:hover{
+    background-color: #979da6;
+}
+.sevbtn{
+    padding: 10px 24px;
+    display: inline-block;
+    background-color: #c69459;
+    border: 1px solid#c69459;
+    color: white;
+    transition: .5s;
+}
+.single-service:hover .sevbtn{
+    background-color: white;
+    border: 1px solid#c69459;
+    color: black;
+    margin-top: 10px;
+    transition: .5s;
+
+}
+.single-service:hover .serimg{
+      transform:rotateY(360deg) ;
+}
+.serimg{
+    transform: rotateY(0);
+    transition: .5s;
+
+}
+
+
+/* .about-section */
+.about-section{
+    padding: 100px;
+    background-color: #f7f7f7;
+}
+.tittle{
+    
+}
+.tittle span{
+    color: #c69459;
+}
+.btn span a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 20px 34px;
+    margin-top: 46px;
+    margin-left: -16px;
+    transition: .5s;
+}
+.btn span a:hover{
+     background-color: #c69459;
+     color: black;
+}
+
+
+
+/* contact-section */
+
+.contact-section{
+    padding: 100px;
+    background-color: #f8f8f8;
+}
+
+.contact-form{
+    color: white;
+}
+   
+.contact-form input {
+    width: 487px;
+    outline: none;
+    border: 2px solid white;
+}
+
+.btns {
+    display: inline-block;
+    background-color: rgb(198, 148, 94);
+    color: white;
+    margin-top: 32px;
+    padding: 16px 30px;
+    border: 2px solid #c69463;
+}
+.contact-form textarea {
+    width: 487px;
+    height: 115px;
+    outline: none;
+    border: 2px solid white;
+}
+
+.backgroundimge {
+    background-image: url("./ia_200000022.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 244px;
+}
+
+
+/* footer-section */
+
+
+.sochalmenu ul{
+    list-style: none;
+}
+.sochalmenu ul li{
+    display: inline-block;
+}
+.sochalmenu li a{
+    display: block;
+    padding: 0px 25px;
+    
+}
+.sochalmenu i{
+    background-color: white;
+    color: #554d4d;
+}
